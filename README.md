@@ -1,4 +1,6 @@
 # pulmonary-tree-labeling
-[MedIA‘24] Efficient Anatomical Labeling of Pulmonary Tree Structures via Deep Point-Graph Representation-based Implicit Functions 
+[[MedIA](https://doi.org/10.1016/j.media.2024.103367)] Efficient anatomical labeling of pulmonary tree structures via deep point-graph representation-based implicit fields 
 
-We are finalizing the code and data for public release, which will be available shortly.
+Preprint: [arXiv:2309](https://arxiv.org/abs/2309.17329)
+
+TODO: We are finalizing the code and data for public release, which will be available shortly.
