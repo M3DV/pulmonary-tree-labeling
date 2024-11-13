@@ -8,13 +8,10 @@ Preprint: [arXiv:2309](https://arxiv.org/abs/2309.17329)
 
 We utilized the Pulmonary Tree Labeling dataset ([PubMed](https://pubmed.ncbi.nlm.nih.gov/21452728/#:~:text=Methods)), which includes 799 subjects, including the 3D volumes of binary shapes of pulmonary airway, artery and vein for each subject. The dataset is divided into 559 subjects for training, 80 cases for validation, and 160 cases for testing. 
 
-
-Furthermore, we provide pre-generated images with lesions based on the `LIDC-IDRI\Normal` dataset. These images are stored in `LIDC-IDRI\Demo`, where `Image_i` represents the images generated under the control information *hist_i*. The pre-trained weights used to generate these images are available in the pre-trained weights mentioned below ([HuggingFace🤗](https://huggingface.co/YuheLiuu/LeFusion/tree/main/LIDC_LeFusion_Model)).
-
 ## :Specifications
 
 We have included a folder 'specs' that contains detailed specfication for this project.
-
+```
 'network_specs.json' --- all configuration of the implicit point graph network.
     ["Graph_Encoder"]
         ["Network_Name"]: Name of the graph-based initial encoder network.
@@ -35,8 +32,9 @@ We have included a folder 'specs' that contains detailed specfication for this p
         ["nsample"]: The max number of samples from the ball query search result that will be used.
     ["Implicit_Module"]
         ["pgn_layer_imp_input"]: The indices of the layers whose feature output will be used for the final implicit point module training and inference.
-
+```
 'train_inference_specs' --- training, inference related parameters.
+```
 Common configurations:
     ["Load_Model"]: 1 - load pretrained model; 0 - don't load pretrained model;
     ["Save_Model"]: 1 - save model; 0 - don't save model;
@@ -52,8 +50,9 @@ Common configurations:
     ["Save_Model"]: 1 - save model; 0 - don't save model;
     ["Implicit_Network_inference_Specs"]["Make_Report"]: If output a performance report of the reconstructed volumes.
     ["Report_file_Name"]: file name of the report.
-
+```
 'dataset_specs_XXX' --- dataset specific details
+```
 Common configurations:
     ["Dataset_Name"]: The pulmonary component.
     ["Max_Node"]: The max number of node a graph in this dataset could have.(required to be pre-determined)
@@ -68,7 +67,7 @@ Common configurations:
     ["Make_Report"]: 1 - load pretrained model; 0 - don't load pretrained model;
     ["Save_Model"]: 1 - save model; 0 - don't save model;
     ["Report_file_Name"]: file name of the report.
-
+```
 'dataset_specs_XXX.json' --- details regarding the dataset that the program will run on. 
 
 ## :nut_and_bolt: Installation
@@ -109,7 +108,7 @@ e.g. python train_network.py -d dataset_specs_airway.json
 
 Start inference:
 
-> ✨**Note**: Before running the following command, make sure you are inside the `LeFusion/LeFusion_LIDC` folder.
+> ✨**Note**: Before running the following command, make sure you are inside the `pulmonary-tree-labeling` folder.
 
 ```bash
 python reconstruction_inference.py -d $dataset_specs_json_file 
