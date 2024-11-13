@@ -80,11 +80,11 @@ Common configurations:
 
 1. Download the PTL datasets (airway, artery, vein) ([Google Drive](https://drive.google.com/drive/folders/1Fi088yjdRgmXbI629hZuXoQfHMbF2gcV?usp=sharing))
 
-   optional: Download the derived Graph skeleton (airway, artery, vein) dataset ([Google Drive](https://drive.google.com/drive/folders/1Fi088yjdRgmXbI629hZuXoQfHMbF2gcV?usp=sharing))
+   optional: Download the derived Graph skeleton (airway, artery, vein) dataset ([Google Drive](https://drive.google.com/drive/folders/1RqmiG_G0pwRMoQ7AAfXbDgsZ3zNSz9cB?usp=sharing)). The graph-based information is already included in the "processed" (pytorch_geometric dataset) folder in the PTL dataset.
 
 Place the downloaded PTL datasets to under the `pulmonary-tree-labeling` directory.
 
-2. Download the pre-trained Model Checkpoints([Google Drive](https://drive.google.com/drive/folders/1ursbfZQY0D9cFoLenGZUqjP8TUQ03UxE?usp=sharing))
+2. Download the pre-trained Model Checkpoints([Google Drive](https://drive.google.com/drive/folders/1gWs-PAnypQez9l9Qg1FNkx8XNXjnHW8q?usp=sharing))
 
    We offer the pre-trained IPGN models, which has been trained on the PTL dataset independently on airway, artery and vein. This pre-trained model can be directly used for Inference if you do not want to re-train the Model. Simply download the folder to under the `pulmonary-tree-labeling` directory.
 
