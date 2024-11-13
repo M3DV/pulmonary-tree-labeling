@@ -1,0 +1,15 @@
+{
+  "Description" : "This file contains specifications for training the Point Graph Network.",
+  "Dataset_Name": "Artery",
+  "Max_Node": 1813,
+  "Num_Class": 19,
+  "Model_Save_Path": "ckp/artery",
+  "Training_Dir":"data_npz/train/artery",
+  "Validation_Dir":"data_npz/val/artery",
+  "Testing_Dir":"data_npz/test/artery",
+  "Inference_Dir":"data_npz/test/artery",
+  "Result_Save_Path": "prediction_volume/artery",
+  "Save_Reconstruction_Volume": 0,
+  "Make_Report": 0,
+  "Report_file_Name": "report.csv" 
+}

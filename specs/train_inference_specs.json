@@ -1,0 +1,55 @@
+{
+  "Description" : "This file contains specifications for training the Point Graph Network." ,
+  "Point_Training_Specs": {
+    "Load_Model": 1,
+    "Save_Model": 0,
+    "Batch_Size" : 16,
+    "Learning_Rate" : 0.002,
+    "Num_Epoches" : 1,
+    "Lr_Decay_Epoches" : 40,
+    "Learning_Rate_Decay": 0.5,
+    "Validation_Per_Epoches" : 1,
+    "Snapshot_Frequency" : 1,
+    "checkpoint_filename": "point_encoder",
+    "prediction_head_checkpoint_filename": "point_encoder_head"
+  },
+  "Graph_Training_Specs": {
+    "Load_Model": 1,
+    "Save_Model": 0,
+    "Batch_Size" : 16,
+    "Learning_Rate" : 0.002,
+    "Num_Epoches" : 1,
+    "Lr_Decay_Epoches" : 80,
+    "Learning_Rate_Decay": 0.5,
+    "Validation_Per_Epoches" : 1,
+    "Snapshot_Frequency" : 1,
+    "checkpoint_filename": "graph_encoder",
+    "prediction_head_checkpoint_filename": "graph_encoder_head"
+  },
+  "PGN_Training_Specs": {
+    "load_Point_Graph_Network": 1,
+    "save_Point_Graph_Network": 0,
+    "Batch_Size" : 16,
+    "Learning_Rate" : 0.01,
+    "Num_Epoches" : 1,
+    "Lr_Decay_Epoches" : 20,
+    "Learning_Rate_Decay": 0.5,
+    "Validation_Per_Epoches" : 1,
+    "Snapshot_Frequency" : 1
+  },
+  "Implicit_Network_Training_Specs": {
+    "load_IPGN": 1,
+    "save_IPGN": 0,
+    "Batch_Size" : 8,
+    "Learning_Rate" : 0.01,
+    "Num_Epoches" : 1,
+    "Lr_Decay_Epoches" : 13,
+    "Learning_Rate_Decay": 0.5,
+    "Validation_Per_Epoches" : 1,
+    "Snapshot_Frequency" : 1
+  }, 
+  "Implicit_Network_inference_Specs": {
+    "Make_Report": 1,
+    "Report_file_Name": "report.xlsx" 
+  }
+}

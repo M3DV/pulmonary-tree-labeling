@@ -1,0 +1,28 @@
+{
+  "Description" : "This file contains network configuration specifications for the Implicit Point Graph Network.",
+  "Graph_Encoder" : {
+    "Network_Name":"GAT",
+    "GNN_Hidden_Layers": [128,128,128,256,256,256,128,128,128],
+    "Attention_Head_Num": 2,
+    "Input_Channel": 3 
+  },
+  "Point_Encoder" : {
+    "Network_Name": "Pointnet++",
+    "PointAbstractions": [2048,1024,256,128],
+    "Out_Channel_Dim": 128
+  },
+  "Point_Graph_Fusion" : {
+    "initial_feature_dim" : 128,
+    "p_operation": 1,
+    "n_operation": 0,
+    "blks_dim" : [128,128,128],
+    "fp_nums": [3,3,3],
+    "radius" : [0.1,0.1,0.1],
+    "nsample" : 24
+
+  },
+  "Implicit_Module":{
+    "pgn_layer_imp_input": [0,1,2] 
+  }
+
+}

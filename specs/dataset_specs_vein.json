@@ -1,0 +1,15 @@
+{
+  "Description" : "This file contains specifications for training the Point Graph Network.",
+  "Dataset_Name": "vein",
+  "Max_Node": 1691,
+  "Num_Class": 19,
+  "Model_Save_Path": "ckp/vein",
+  "Training_Dir":"data_npz/train/vein",
+  "Validation_Dir":"data_npz/val/vein",
+  "Testing_Dir":"data_npz/test/vein",
+  "Inference_Dir":"data_npz/test/vein",
+  "Result_Save_Path": "prediction_volume/vein",
+  "Save_Reconstruction_Volume": 0,
+  "Make_Report": 0,
+  "Report_file_Name": "report.xlsx" 
+}

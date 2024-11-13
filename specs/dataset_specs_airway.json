@@ -1,0 +1,15 @@
+{
+  "Description" : "This file contains specifications for training the Point Graph Network.",
+  "Dataset_Name": "Airway",
+  "Max_Node": 519,
+  "Num_Class": 19,
+  "Model_Save_Path": "ckp/airway",
+  "Training_Dir":"data_npz/train/airway",
+  "Validation_Dir":"data_npz/val/airway",
+  "Testing_Dir":"data_npz/test/airway",
+  "Inference_Dir":"data_npz/test/airway",
+  "Result_Save_Path": "prediction_volume/airway",
+  "Save_Reconstruction_Volume": 0,
+  "Make_Report": 1,
+  "Report_file_Name": "report.csv" 
+}
