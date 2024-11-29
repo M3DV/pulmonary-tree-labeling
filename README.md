@@ -6,7 +6,7 @@ Preprint: [arXiv:2309](https://arxiv.org/abs/2309.17329)
 
 ## :bookmark_tabs:Data Preparation
 
-We utilized the Pulmonary Tree Labeling dataset ([PubMed](https://pubmed.ncbi.nlm.nih.gov/21452728/#:~:text=Methods)), which includes 799 subjects, including the 3D volumes of binary shapes of pulmonary airway, artery and vein for each subject. The dataset is divided into 559 subjects for training, 80 cases for validation, and 160 cases for testing. 
+We open source a new Pulmonary Tree Labeling dataset, which includes 799 subjects, including the 3D volumes of binary shapes of pulmonary airway, artery and vein for each subject. The dataset is divided into 559 subjects for training, 80 cases for validation, and 160 cases for testing. 
 
 ## :Specifications
 
